@@ -1,0 +1,32 @@
+@media only screen and (min-width: 32.5em){
+
+    h1{
+    
+        font-size: 1.8rem;
+        margin-right: 10%;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    .header-container img{
+        height: 30%;
+        width: 25%;
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 8px 0 0 8px;
+        text-align: center;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-container, .footer-container{
+        text-align: center;
+    }
+    .links ul li{
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .header-container{
+        margin-right: 0 auto;
+    }
+}
