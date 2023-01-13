@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto&display=swap');
+
+@media only screen and (min-width: 60em) {
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 1.5rem;
+    }
+    section:nth-child(3){
+        grid-column: span 1;
+    }
+    .header-container{
+        font-size: 1.5rem;
+    }
+
+
+}
