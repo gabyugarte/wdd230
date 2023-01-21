@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+:root{
+    --heading-font: "Montserrat" , Helvetica, sans-serif;
+    --paragraph-font: "Lato", sans-serif;
+
+    --headline-color-on-white: #0E54B1;  /* headlines on a white background */ 
+    --headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #41b9ff; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #41b9ff  ;
+    --nav-link-color: #FFFFFF;
+    --nav-background-color: rgb(14, 84, 177);
+    --nav-hover-link-color: #FFFFFF;
+    --nav-hover-background-color: #41b9ff;
+}
+
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+header{
+    background-color: var(--nav-background-color);
+    color: var(--headline-color-on-color);
+    display: grid;
+    grid-template-columns: 150px auto;
+    height: 100px;
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+
+  }
+
+nav{
+    background-color: var(--nav-background-color);
+    display: flex;
+    justify-content: space-around;
+    height: 90%;
+}
+nav a{
+    color: #fbfcff;
+    text-decoration: none;
+    text-align: center;
+    padding: 35px;
+}
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+  }
+  nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+  }
+
+ul li:before{
+    list-style: none;
+    content: '✔ ';
+  }
+
+#logo_link, .logo{
+    /* padding-top: 5px; */
+    justify-self: center;
+    align-self: center;
+    height: 110px;
+    width: 150px;
+    /* margin-bottom: 5px; */
+}
+.logo{
+    width: 100%;
+
+}
+.icon {
+    width: 50px;
+    padding-top: 10px;
+}
+
+/*--------------------------------------DESIGN PAGE*/
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .colors th {
+    background-color: #999;
+  }
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+  
+  .primary {
+    background-color: var(--headline-color-on-white);
+  }
+  .secondary {
+    background-color: var(--paragraph-color-on-white);
+  }
+  .accent1 {
+    background-color: #6F6F6F;
+  }
+  .accent2{
+    background-color: var(--headline-color-on-color);
+  }
+  
+  p.colored {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+  }
+  
+  ul li{
+    font-family: var(--paragraph-font);
+    text-align: justify;
+    padding: 1rem;
+    margin: 15px 30px;
+    list-style: none;
+
+  }
+  main p, main p li{
+    text-align: justify;
+    padding: 1rem;
+    margin: 15px 30px;
+    font-family: var(--paragraph-font);
+  }
+  
+
+
+/* ------------------------Books and Projects Page------------------------ */
+
+
+
+
+/* ------------------------Contact Us Page------------------------ */
+.mainform{
+  margin: 50px auto;
+}
+h4{
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: var(--heading-font);
+  color: #111;
+  text-align: center;
+}
+
+
+
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid var(--headline-color-on-white);
+  border-radius: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+  color: var(--headline-color-on-white);
+  margin: 15px 0;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid var(--headline-color-on-white);
+  margin-top: 15px;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: var(--headline-color-on-white);
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  font-size: 16px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  color: var(--headline-color-on-white);
+  border-radius: 5px;
+  border: none;
+  background-color:var(--headline-color-on-white);
+  color: var(--headline-color-on-color);
+}
+
+button {
+  margin: 0 auto auto;
+  display: block;
+ 
+}
+
+.button:hover{
+  background-color: var(--nav-hover-background-color);
+  color:var(--headline-color-on-color);
+  /* border: 1px solid #396E94; */
+  cursor: pointer;
+} 
+
+#feedback {
+  background-color:var(--nav-hover-background-color);
+  color:var(--headline-color-on-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .5em;
+  /* make this element invisible until we are ready for it */
+  display: none;      
+}
+.moveDown {
+  margin-top: 3em;
+}.home-title{
+  text-align: center;
+}
+
+/* ------------------------FOOTER------------------------ */
+
+footer{
+    background-color: var(--nav-background-color);
+    padding: 25px 50px;
+    /* margin-top: 200px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a{
+    text-decoration: none;
+    color: var(--nav-link-color)
+}
+
+footer p {
+    font-size: 1em;
+    font-family: var(--paragraph-font);
+    color: var(--nav-link-color)
+
+}    
+
+footer p a:hover {
+    text-decoration: underline;
+}   
+
+footer .social img{
+    padding-top: 15px;
+}
+
+.social a:hover{
+  opacity: 0.7;
+  cursor:pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
+}
+
+
+/* ------------------------Responsive design------------------------ */
+
+@media screen and (max-width: 900px) {
+
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 2px;
+    }
+    .lp-grid{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+    .learningPath-img1 img, .learningPath-img2 img, .learningPath-img3 img{
+      width: 80%;
+    }
+  }
