@@ -240,7 +240,7 @@ button {
 
 footer{
     background-color: var(--nav-background-color);
-    padding: 25px 50px;
+    padding: 25px 20px;
     /* margin-top: 200px; */
     display: flex;
     justify-content: space-around;
