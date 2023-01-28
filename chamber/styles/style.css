@@ -20,47 +20,109 @@
 body {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
+  padding: 0;
+  /* font-size: 18px; */
   text-align: center;
 }
 header{
     background-color: var(--nav-background-color);
     color: var(--headline-color-on-color);
     display: grid;
-    grid-template-columns: 150px auto;
-    height: 100px;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
     font-family: var(--heading-font);
     text-transform: uppercase;
-
+    font-size: .8rem;
   }
+  nav button{
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color:#fbfcff;
+}
 
 nav{
     background-color: var(--nav-background-color);
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    height: 90%;
+    align-items: center;
+    height: 150px;
+    width: 250px;
     padding: 10px;
+    margin: 0 auto;
+  
 }
 nav a{
     color: #fbfcff;
     text-decoration: none;
     text-align: center;
-    padding: 35px;
+    padding: 10px;
 }
 nav a:link, nav a:visited {
     color: var(--nav-link-color);
-  }
+}
   nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
-  }
+}
 
-ul li:before{
+nav ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li a{
+  display: block;
+  padding: .8rem 2vw;
+  text-decoration: none;
+  color: #333;
+  border-top: 1px solid rgba(0,0,0,0.5);
+  font-size: .8rem;
+}
+
+nav ul li.active a{
+  background-color: rgba(0,0,0,0.2);
+  color: #fff;
+}
+
+nav ul li a:hover{
+  background-color: rgba(0,0,0,0.3);
+}
+
+nav ul{
+  display: none;
+}
+nav ul.open{
+  display: block;
+}
+#datetime{
+  background-color: #0E54B1;
+  color: #fbfcff;
+  border-top:1px solid black;
+  padding: 10px;
+  /* font-size: .8rem; */
+}
+#hamburgerBtn span:nth-child(1) { 
+  display: block;
+  /* float: right; */
+} 
+#hamburgerBtn span:nth-child(2) { display: none;} 
+
+#hamburgerBtn.open span:nth-child(1) { display: none;} 
+#hamburgerBtn.open span:nth-child(2) { display: block;} 
+
+/* ul li:before{
     list-style: none;
     content: '✔';
-  }
-
+  } */
+#primaryNav li{
+  z-index: 99;
+  padding: 0px;
+  height: 35px;
+}
 #logo_link, .logo{
     /* padding-top: 5px; */
     justify-self: center;
@@ -68,16 +130,27 @@ ul li:before{
     height: 100%;
     width: 150px;
     /* margin-bottom: 5px; */
-}
+} 
 .logo{
-    width: 100%;
-
+    width: 100px;
+    margin-top: 15px;
 }
 .icon {
     width: 50px;
     padding-top: 10px;
 }
 
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+
+}
+
+.social svg {
+	width: 15px;
+	height: auto;
+}
 
 .colors {
     width: 100%;
@@ -120,7 +193,7 @@ ul li:before{
 
   }
   main{
-    margin-top: 100px;
+    margin-top: 10px;
   }
   main p, main p li{
     text-align: justify;
@@ -129,8 +202,27 @@ ul li:before{
     font-family: var(--paragraph-font);
   }
   
+.hero, .event, .weather, .news_release{
+  border: 1px solid black;
+  padding: 50px;
+  margin: 10px;
+}
 
-
+.spotLight{
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.spotLight1, .spotLight2{
+  border: 1px solid black;
+  padding: 50px;
+  margin: 5px;
+  width: 80%;
+}
 
 /* ------------------------Contact Us Page------------------------ */
 .mainform{
@@ -242,8 +334,10 @@ footer{
     padding: 25px 20px;
     /* margin-top: 200px; */
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    font-size: .9rem;
 }
 footer a{
     text-decoration: none;
@@ -271,25 +365,8 @@ footer .social img{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: 0.3s;
 }
+.owner{
+  border-top: 1px solid black;
+}
 
 
-/* ------------------------Responsive design------------------------ */
-
-@media screen and (max-width: 900px) {
-
-    nav, footer {
-        flex-direction: column;
-    }
-    nav a {
-        display: block;
-        padding: 2px;
-    }
-    .lp-grid{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      }
-    .learningPath-img1 img, .learningPath-img2 img, .learningPath-img3 img{
-      width: 80%;
-    }
-  }

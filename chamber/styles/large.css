@@ -1,0 +1,39 @@
+@media only screen and (min-width: 64rem){
+   
+    nav button {
+        display: none;
+    }
+    nav{
+        max-width: 100%;
+    }
+    nav ul#primaryNav{
+        display: flex;
+        margin-left: 2vw;
+        /* border-left: 1px solid rgba(0,0,0,0.3); */
+
+    }
+
+   main{
+    position: flex;
+    flex-wrap: wrap;
+   }
+   nav ul li a{
+    border: none;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+  }
+  #datetime{
+    background-color: #0E54B1;
+    color: #fbfcff;
+    border-top:1px solid black;
+    padding: 10px;
+    font-size: 1rem;
+  } 
+  .logo {
+    width: 150px;
+    margin-top: 30px;
+}
+}
