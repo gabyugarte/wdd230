@@ -22,3 +22,13 @@ function showDate() {
 
 let text = document.lastModified;
 document.getElementById("demo").innerHTML = text;
+
+//Banner
+
+const banner = document.getElementById("banner");
+const today = new Date();
+const dayOfWeek = today.getDay();
+
+if (dayOfWeek === 1 || dayOfWeek === 2) {
+  banner.style.display = "block";
+}

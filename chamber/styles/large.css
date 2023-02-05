@@ -1,5 +1,23 @@
 @media only screen and (min-width: 64rem){
-   
+  header{
+    background-color: var(--nav-background-color);
+    color: var(--headline-color-on-color);
+    display: grid;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    font-size: .8rem;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
     nav button {
         display: none;
     }
@@ -13,27 +31,92 @@
 
     }
 
-   main{
-    position: flex;
-    flex-wrap: wrap;
-   }
-   nav ul li a{
-    border: none;
-    display: block;
-    text-decoration: none;
-    color: #333;
-    font-size: 1.5rem;
-    padding: .5rem 1rem;
-  }
-  #datetime{
-    background-color: #0E54B1;
-    color: #fbfcff;
-    border-top:1px solid black;
-    padding: 10px;
-    font-size: 1rem;
-  } 
-  .logo {
-    width: 150px;
-    margin-top: 30px;
-}
-}
+    nav ul li a{
+      border: none;
+      display: block;
+      text-decoration: none;
+      color: #333;
+      font-size: 1.2rem;
+      padding: .5rem 1rem;
+    }
+    #datetime{
+      background-color: #0E54B1;
+      color: #fbfcff;
+      border-top:1px solid black;
+      padding: 10px;
+      font-size: 1rem;
+    } 
+   
+    .logo {
+      width: 150px;
+      margin-top: 30px;
+    }
+     /* hero */
+     /* .hero {
+      grid-area: hero;
+      text-align: center;
+      justify-content: center;
+      padding: 80px 60px;
+    } */
+     .hero-text {
+      font-size: .9rem;
+      margin-top: 20%;
+      }
+      .event{
+        padding-top: 40px;
+      }
+      aside {
+        grid-column: 4/5;
+        grid-row: 1/4;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+    
+      .spotlight3 {
+        display: block;
+      }
+    
+      aside div {
+        margin: 10px auto;
+      }
+    
+      .event,
+      .hero,
+      .joinbutton,
+      .news,
+      .weather {
+        grid-column: 2/4;
+        width: 100%;
+        height: 100%;
+      }
+    
+      .hero {
+        grid-row: 1/3;
+        padding: 10px;
+      }
+    
+      .event,
+      .joinbutton,
+      .news,
+      .weather {
+        grid-row: 3/4;
+      }
+    
+      .event,
+      .joinbutton,
+      .weather {
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+    
+      .joinbutton,
+      .weather {
+        grid-row: 2/3;
+      }
+    
+      .joinbutton {
+        grid-row: 3/4;
+      }
+    }
+   

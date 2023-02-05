@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="styles/large.css">
 </head>
 <body onload="showDate()">
-    <div id="content">
-        <header>
+    <header>
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/logo.png" alt="AI Logo">
             </a>
@@ -54,27 +53,62 @@
                 </div>
             </nav>
             <div id="datetime">Saturday, 28 November 2023</div>
-        </header>
-        <main>
-            <div class="hero">
-Hero with site name and call to action
-            </div>
+            <div id="banner" style="display: none;">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+    </header>
+    <main class="content">
+            <!-- Hero Section -->
+            <div class="hero-image hero">
+                <div class="hero-text">
+                    <h1>TORRELLES DE FOIX - Chamber of Commerce</h1>
+                    <p>HOW DO YOU PLAN ON GROWING YOUR BUSINESS ?</p>
+                    <button>Be a member!</button>
+                  </div>
+            </div>                
+              </div>
+            <!-- Event Section -->
             <div class="event">
-Event
-            </div>
-            <div class="weather">
-Weather
-            </div>
-            <div class="news_release">
-News Release
-            </div>
-            <div class="spotLight">
-                <div class="spotLight1"> SpotLigth 1</div>
-                <div class="spotLight2"> SpotLigth 2</div>
-            </div>
-
-        </main>
-                
+                <b>La Llotja de Mar</b><br />
+                <p> Placed in the sea front in the heart of the historic district of Barcelona, La Llotja de Mar is one of the most significant and magnificent monuments which represents the economy and the culture of the city. It was built during the second half of the 14th century, the most brilliant period of the Catalan Gothic.</p>
+              </div>
+              <div class="weather">
+                <h3>The Weather Today!</h3>
+                <h3 id="temperature">°F</h3>
+                <h4 id="description-temperature">Description</h4>
+                <hr />
+                <p id="wind-speed">Wind Speed</p>
+              </div>
+              <div class="news">
+                <span id="news-date"><b>News Release - Global business welcomes adoption of OECD Principles on Government Access to Personal Data</b></span>
+                <p>
+                    Ministers of OECD countries responsible for digital economy policy today adopted a ground-breaking Declaration on Government Access to Personal Data Held by Private Sector Entities.
+                </p>
+              </div>
+        
+              <div class="joinbutton">
+                <button class="join-us">Join Us!</button>
+                <p class="text-join">
+                    Chambers of commerce are an essential and credible intermediary between government, business and the general public.
+                    With a history spanning over 400 years, chambers today exist in almost every country and offer a multitude of programmes and services to support trade and development.
+                </p>
+              </div>
+        
+              <aside class="aside">
+                <div>
+                  <b>Guest blog</b><br /><br />
+                  What’s on the horizon for mediation in 2023?
+                  Oliver Carroll, Senior Associate in Dispute Resolution at international law firm Clifford Chance, looks ahead to what is in store for mediation in 2023.
+                </div>
+                <div>
+                  <b>Arbitration</b><br />
+                  Our rigorous approach, efficient processes and practical rules that cover every contractual issue have made us the leading arbitral institution. With teams across the globe, we stand ready to help you at any stage of your dispute.
+                </div>
+        
+                <div class="spotlight3">
+                  <b>World Chambers Federation</b>
+                  The World Chambers Federation (WCF) is ICC’s unique and truly global forum connecting, leading and inspiring the global network of chambers and their respective business communities. As well as strengthening links among chambers, WCF also helps individual chambers become more productive.
+                </div>
+              </aside>
+    </main> 
         <footer>
         <div class="address">
             <a id="logo_link" href="index.html">
@@ -83,7 +117,7 @@ News Release
             <p>Pontons Street 24 Torrelles de Foix, Barcelona, Spain</p>
             <p>gabrielaugartemaco@gmail.com</p>
             <p>+34 640 10 20 75</p>
-            <p><a>Location Map</a></p>
+            <p><a>📍 Location Map</a></p>
         </div>
         <div class="owner">
           <p>TF - Chamber of Commerce &copy;<span id="year"></span></p>
