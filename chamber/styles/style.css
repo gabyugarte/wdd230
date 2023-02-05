@@ -442,6 +442,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     font-size: .9rem;
+    margin-top: 10px;
 }
 footer a{
     text-decoration: none;
