@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
 </head>
-<body onload="showDate()">
+<body onload="showDate(), calculateWindChill()">
     <header>
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/logo.png" alt="AI Logo">
@@ -52,7 +52,7 @@
                         </svg></a>
                 </div>
             </nav>
-            <div id="datetime">Saturday, 28 November 2023</div>
+            <div id="datetime"></div>
             <div id="banner" style="display: none;">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
     </header>
     <main class="content">
@@ -61,7 +61,7 @@
                 <div class="hero-text">
                     <h1>TORRELLES DE FOIX - Chamber of Commerce</h1>
                     <p>HOW DO YOU PLAN ON GROWING YOUR BUSINESS ?</p>
-                    <button>Be a member!</button>
+                    <button class="button">Be a member!</button>
                   </div>
             </div>                
               </div>
@@ -69,7 +69,11 @@
               <div class="event">
                   <b>La Llotja de Mar</b><br />
                   <p> Placed in the sea front in the heart of the historic district of Barcelona, La Llotja de Mar is one of the most significant and magnificent monuments which represents the economy and the culture of the city. It was built during the second half of the 14th century, the most brilliant period of the Catalan Gothic.</p>
-              </div>
+                  <figure>
+                    <img class ="event_img" src="images/llotja_de_mar.jpg" alt="Llotja de mar">
+                    <figcaption>La Llodja de Mar, Edificio Histórico de Barcelona</figcaption>
+                  </figure>
+                </div>
               <div class="weather">
                 <h2>The Weather Today!</h2>
                 <h3><span id="temperature">33</span>°C</h3>
@@ -91,7 +95,7 @@
               </div>
         
               <div class="joinbutton">
-                <button class="join-us">Join Us!</button>
+                <button class="button"> Join Us!</button>
                 <p class="text-join">
                     Chambers of commerce are an essential and credible intermediary between government, business and the general public.
                     With a history spanning over 400 years, chambers today exist in almost every country and offer a multitude of programmes and services to support trade and development.
@@ -135,7 +139,7 @@
       </footer>
     </div>
     <script src="scripts/script.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
 
 </body>
 </html>

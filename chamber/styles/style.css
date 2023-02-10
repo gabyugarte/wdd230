@@ -404,7 +404,6 @@ textarea {
 button {
   margin: 0 auto auto;
   display: block;
- 
 }
 
 .button:hover{
@@ -430,7 +429,12 @@ button {
 }.home-title{
   text-align: center;
 }
-
+.event figure .event_img{
+  width: 60%;
+}
+.event figure .event_img img{
+  width: 100%;
+}
 /* ------------------------FOOTER------------------------ */
 
 footer{
