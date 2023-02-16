@@ -50,3 +50,41 @@ function calculateWindChill() {
 // window.onload = function() {
 //   calculateWindChill();
 // }
+      // Lazy loading images
+      document.addEventListener("DOMContentLoaded", function() {
+        var lazyImages = [].slice.call(document.querySelectorAll(".lazy"));
+    
+        if ("IntersectionObserver" in window) {
+            let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        let lazyImage = entry.target;
+                        lazyImage.src = lazyImage.dataset.src;
+                        lazyImage.classList.add("lazy-loaded");
+                        lazyImageObserver.unobserve(lazyImage);
+                    }
+                });
+            });
+    
+            lazyImages.forEach(function(lazyImage) {
+                lazyImageObserver.observe(lazyImage);
+            });
+        } else {
+            // Fallback for browsers that don't support IntersectionObserver
+            lazyImages.forEach(function(lazyImage) {
+                lazyImage.src = lazyImage.dataset.src;
+            });
+        }
+    });
+
+      // Local storage for time between visits
+      const lastVisit = localStorage.getItem("lastVisit");
+      if (lastVisit) {
+        const daysSinceLastVisit = Math.round(
+          (new Date() - new Date(lastVisit)) / (1000 * 60 * 60 * 24)
+        );
+        const visitMessage = `Welcome back! It's been ${daysSinceLastVisit} days since your last visit.`;
+        const visitElement = document.querySelector("#visit-message");
+        visitElement.innerHTML = visitMessage;
+      }
+      localStorage.setItem("lastVisit", new Date());
