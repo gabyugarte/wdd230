@@ -60,7 +60,7 @@
     } */
      .hero-text {
       font-size: .9rem;
-      margin-top: 20%;
+      margin-top: 50%;
       }
       .event{
         padding-top: 40px;
@@ -79,6 +79,7 @@
     
       aside div {
         margin: 10px auto;
+        padding-left: 0px;
       }
     
       .event,
@@ -118,5 +119,15 @@
       .joinbutton {
         grid-row: 3/4;
       }
-    }
+    
    
+    .main-join {
+      max-width: 50%;
+      margin: 30px auto;
+      display: flex;
+      flex-direction: row;
+      padding: 2rem;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    }
+  }

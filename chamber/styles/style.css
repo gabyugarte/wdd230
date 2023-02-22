@@ -199,7 +199,7 @@ nav ul.open{
     padding: 40px 20px;
   }
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/wdd230-org.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/chamber-of-commerce.jpg");
   height: 80vh;
   grid-column: 1/4;
   grid-row: 1/2;
@@ -399,6 +399,7 @@ textarea {
   border: none;
   background-color:var(--headline-color-on-white);
   color: var(--headline-color-on-color);
+  max-width: 100%;
 }
 
 button {
@@ -512,3 +513,111 @@ figcaption{
  picture:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+/* JOIN PAGE */
+
+.main-join{
+  max-width: 800px;
+  margin: 30px;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form elements */
+.form-join {
+  /* margin: 1rem 0; */
+  width: 90%;
+}
+
+.form_label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-align: left;
+  width: 200px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Style the membership level selection */
+.membership-level {
+  margin: 1rem 0;
+}
+
+.membership-level label {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.membership-benefits{
+  text-align: center;
+}
+.membership-benefits ul{
+  text-align: right;
+  width: 100%;
+  padding-left: 0px;
+}
+
+/* Style the business description field */
+.business-description {
+  margin: 1rem 0;
+}
+
+.business-description label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.business-description textarea {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Style the hidden field */
+.hidden {
+  display: none;
+}
+
+/* THANK YOU PAGE  */
+.main-thankyou{
+max-width: 800px;
+margin: 0 auto;
+text-align: center;
+display: block;
+padding: 10px;
+}
+/* Style the main heading */
+.thankyou-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+/* Style the paragraph */
+.thankyou-p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #555555;
+} 

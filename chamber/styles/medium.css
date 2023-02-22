@@ -184,4 +184,7 @@
     border-top: 1px solid #0E54B1;
   }
 
+  .main-join {
+    display: block;
+}
 }
