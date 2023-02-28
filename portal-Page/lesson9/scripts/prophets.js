@@ -1,4 +1,3 @@
-
 const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
 
 async function getProphetData(url) {
@@ -43,7 +42,7 @@ const displayProphets = (prophets) => {
         suffix = 'th';
         break;
     }
-    h2.textContent = `${prophet.name} - ${prophetNumber}${suffix}`;
+    h2.textContent = `${prophet.name} ${prophet.lastname}- ${prophetNumber}${suffix}`;
   
       // Build the image portrait by setting all the relevant attribute
       portrait.setAttribute('src', prophet.imageurl);
@@ -96,4 +95,3 @@ if (prophet.death) {
       cards.appendChild(card);
     }) // end of forEach loop
   } // end of function expression
- 
