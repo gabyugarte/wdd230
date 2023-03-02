@@ -265,6 +265,10 @@ main div {
   display: none;
 }
 
+.joinbutton a{
+  text-decoration: none;
+  color: white;
+}
 .spotlight3 {
   display: none;
 }
@@ -401,7 +405,13 @@ textarea {
   color: var(--headline-color-on-color);
   max-width: 100%;
 }
-
+.button a{
+  text-decoration: none;
+  color: #111;
+}
+.button a:hover{
+  color: white;
+}
 button {
   margin: 0 auto auto;
   display: block;
@@ -436,6 +446,88 @@ button {
 .event figure .event_img img{
   width: 100%;
 }
+
+/* ------------------------DIRECTORY PAGE------------------------ */
+.container-directory{
+  margin: 0 auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	max-width: 80%;
+	background-color: #eee;
+}
+
+.view-switch {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bbb;
+	text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.business-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  /* padding: 1rem; */
+  text-align: center;
+  width: 80%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); /* sombra */
+  border-radius: 8px; /* borde redondeado */
+  border: 1px solid #e0e0e0; /* borde */
+  padding: 16px; /* espacio interno */
+  background-color: #ffffff; /* color de fondo */
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.list-item {
+  /* border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+  width: 100%; */
+  display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+  width: 100%;
+}
+
+.list-item h2 {
+  margin-top: 0;
+}
+.list-item:nth-child(even) {
+	background-color: var(--paragraph-background-color);
+}
+.cards-view, .list-view{
+  padding: 1rem;
+	font-weight: 700;
+}
+
+.list-view {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* .view-switch button {
+  margin-right: 1rem;
+} */
+
+
+
 /* ------------------------FOOTER------------------------ */
 
 footer{

@@ -99,3 +99,4 @@ hiddenField.setAttribute("id", "dateTime");
 hiddenField.setAttribute("name", "dateTime");
 hiddenField.setAttribute("value", dateTime);
 document.body.appendChild(hiddenField);
+
