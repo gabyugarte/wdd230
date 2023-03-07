@@ -522,11 +522,26 @@ button {
 
 
 
-/* .view-switch button {
-  margin-right: 1rem;
-} */
+/* ----------------WEATHER-------------*/
+figure #weather-icon {
+  animation: pulse 2s infinite;
+}
 
-
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#current-temp {
+  font-size: 1rem;
+  color: #ff5733;
+}
 
 /* ------------------------FOOTER------------------------ */
 

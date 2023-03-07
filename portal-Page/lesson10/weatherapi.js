@@ -32,7 +32,7 @@ async function apiFetch() {
     // captionDesc.textContent = desc;
   }
 
-const cities = ['London,uk', 'New York,us', 'Sydney,au', 'Fairbanks,us'];
+const cities = ['London,uk', 'New York,us', 'Sydney,au', 'Fairbanks,us', 'Torrelles de Foix,es'];
 const apiKey = 'cc5a1d62fd55d167357c88a8dc585001';
 const baseUrl = 'https://api.openweathermap.org/data/2.5/weather';
 const weatherData = [];

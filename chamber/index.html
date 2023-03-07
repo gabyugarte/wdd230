@@ -75,11 +75,14 @@
                 </div>
               <div class="weather">
                 <h2>The Weather Today!</h2>
-                <h3><span id="temperature">33</span>°C</h3>
-                <h4 id="description-temperature">Description</h4>
+                <h4>The current temperature in Torrelles de Foix, Spain is <span id="current-temp"></span>&deg;F</h4>
+                <figure>
+                  <img src="" alt="" id="weather-icon" />
+                  <p class="description"></p>
+                </figure>
                 <hr />
-                <p><span id="windspeed">4</span>mph</p>
-                <p>Wind Chill: <span id="windchill"></span></p>
+                <h4>Wind Speed: <span id="wind-speed"></span></h4>
+                <h4>Wind Chill: <span id="windchill"></span></p>
                 <!-- <div id="weather">
                   <p>Temperature: <span id="temperature">33</span>°C</p>
                   <p>Wind Speed: <span id="windspeed">4</span>mph</p>
@@ -137,6 +140,7 @@
         </div>
     </footer>
     <script src="scripts/script.js"></script>
+    <script src="scripts/weather.js"></script>
 
 </body>
 </html>
