@@ -1,0 +1,90 @@
+figure img {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  ody {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-top: 50px;
+  }
+  
+  #current-temp {
+    font-size: 2rem;
+    color: #ff5733;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+  }
+  
+  figure {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #weather-icon {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  figcaption {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+  }
+  #results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    width: 20rem;
+  }
+  
+  .card h2 {
+    margin-top: 0;
+  }
+  
+  .card p {
+    margin: 0.5rem 0;
+  }
+  
+  .card img {
+    width: 5rem;
+    height: 5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .card figcaption {
+    text-align: center;
+  }
