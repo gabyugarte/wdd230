@@ -23,7 +23,7 @@ async function apiFetch() {
   apiFetch();
 
   function  displayResultsHtml(weatherData) {
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+    currentTemp.innerHTML = toCelsius(weatherData.main.temp);
     // const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     // const desc = weatherData.weather[0].description.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
   
@@ -59,6 +59,7 @@ async function fetchAllWeatherData() {
 
 fetchAllWeatherData();
 
+
 function displayResults(weatherData) {
   const resultsContainer = document.querySelector('#results-container');
   resultsContainer.innerHTML = '';
@@ -66,7 +67,7 @@ function displayResults(weatherData) {
 
   weatherData.forEach((data) => {
     const city = data.name;
-    const temperature = data.main.temp.toFixed(0);
+    const temperature = toCelsius(data.main.temp);
     const iconUrl = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     const description = data.weather[0].description.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
@@ -77,7 +78,7 @@ function displayResults(weatherData) {
     header.textContent = city;
 
     const temp = document.createElement('p');
-    temp.innerHTML = `Temperature: <strong>${temperature}</strong> &deg;F`;
+    temp.innerHTML = `Temperature: <strong>${temperature}</strong> &deg;C`;
 
     const icon = document.createElement('img');
     icon.src = iconUrl;
@@ -96,4 +97,7 @@ function displayResults(weatherData) {
 
     resultsContainer.appendChild(card);
   });
+}
+function toCelsius(kelvin){
+  return Math.round(kelvin - 273.15);
 }

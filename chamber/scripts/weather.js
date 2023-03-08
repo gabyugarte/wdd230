@@ -2,6 +2,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('.description');
 const windSpeed = document.querySelector('#wind-speed');
+const range = document.querySelector('#range');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?q=Torrelles de Foix,es&APPID=cc5a1d62fd55d167357c88a8dc585001';
 async function apiFetch() {
@@ -22,16 +23,18 @@ async function apiFetch() {
   apiFetch();
 
   function  displayResults(weatherData) {
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+    currentTemp.innerHTML = toCelsius(weatherData.main.temp);
     windSpeed.innerHTML = `<strong> ${weatherData.wind.speed} km/h</strong>`;
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description.toUpperCase();
-
+    range.innerHTML = `<strong> ${toCelsius(weatherData.main.temp_max)}C / ${toCelsius(weatherData.main.temp_min)}C</strong>`;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
   }
-
+function toCelsius(kelvin){
+  return Math.round(kelvin - 273.15);
+}
   //Calculate windchill
 
 function calculateWindChill() {
