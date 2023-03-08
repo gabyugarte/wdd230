@@ -35,7 +35,7 @@ async function apiFetch() {
 function toCelsius(kelvin){
   return Math.round(kelvin - 273.15);
 }
-  //Calculate windchill
+  // Calculate windchill
 
 function calculateWindChill() {
     let temperature = document.getElementById("current-temp").textContent;
@@ -49,7 +49,7 @@ function calculateWindChill() {
     }
   }
    
-  window.onload = function() {
-    calculateWindChill();
-  }
+  // window.onload = function() {
+  //   calculateWindChill();
+  // }
   

@@ -32,7 +32,7 @@ const api = {
       city.innerHTML = `${data.name}, ${data.sys.country}`;
     //   data.innerHTML = (new Date()).toLocaleDateString();
       temp.innerHTML = `${toCelsius(data.main.temp)}c`;
-      weather.innerHTML = data.weather[0].description;
+      weather.innerHTML = data.weather[0].description.toUpperCase();
       range.innerHTML = `${toCelsius(data.main.temp_min)}c / ${toCelsius(data.main.temp_max)}c`;
       updateImages(data);
     } catch (err) {

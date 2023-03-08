@@ -77,14 +77,3 @@ if (dayOfWeek === 1 || dayOfWeek === 2) {
       }
       localStorage.setItem("lastVisit", new Date());
 
-// date hidden from form
-      const now = new Date();
-const dateTime = now.toLocaleString();
-
-let hiddenField = document.createElement("input");
-hiddenField.setAttribute("type", "hidden");
-hiddenField.setAttribute("id", "dateTime");
-hiddenField.setAttribute("name", "dateTime");
-hiddenField.setAttribute("value", dateTime);
-document.body.appendChild(hiddenField);
-
