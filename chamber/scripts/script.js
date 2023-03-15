@@ -77,3 +77,5 @@ if (dayOfWeek === 1 || dayOfWeek === 2) {
       }
       localStorage.setItem("lastVisit", new Date());
 
+
+

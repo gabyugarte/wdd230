@@ -10,7 +10,7 @@ fetch('data.json')
   .then(data => {
     // Display data in cards view by default
     displayCardsView(data);
-    console.log(data);
+    // console.log(data);
     
     // Switch between cards and list view on button click
     cardsViewButton.addEventListener('click', () => {
@@ -25,7 +25,7 @@ fetch('data.json')
 // Display businesses in cards view
 function displayCardsView(data) {
   businessList.innerHTML = '';
-  console.log(data);
+  // console.log(data);
   data.forEach(business => {
     const card = document.createElement('div');
     card.classList.add('card');
@@ -42,6 +42,7 @@ function displayCardsView(data) {
   businessList.classList.add('cards-view');
   console.log(data);
 }
+
 
 console.log(data);
 // Display businesses in list view

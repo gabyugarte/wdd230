@@ -12,8 +12,11 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8RtEHoUIczVWvRKwRBzkQuxZgmFIh_NA&callback=initMap"
+    async defer></script>
 </head>
-<body onload="showDate(), calculateWindChill()">
+
     <header>
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/logo.png" alt="AI Logo">
@@ -22,7 +25,7 @@
                 <button id="hamburgerBtn" type="button"><span>&#9776;</span><span>X</span></button>
                 <ul id="primaryNav">
                     <li><a href="./discover.html">Discover</a></li>
-                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="./directory.html">Directory</a></li>
                     <li><a href="./join.html">Join</a> </li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
@@ -54,15 +57,28 @@
             <div id="datetime"></div>
             <div id="banner" style="display: none;">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
     </header>
-    <br>
-	<div class="container-directory">
-		<h1>Business Directory</h1>
-		<div class="view-switch">
-			<button class="cards-view">⏹️Cards View</button>
-			<button class="list-view">📄List View</button>
-		</div>
-		<div class="business-list"></div>
-	</div>
+    <body onload="initMap()">
+    <section class="container-contact">
+        <div style="text-align: center;">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="row">
+            <div class="column">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47877.88209320542!2d1.5519383784415905!3d41.40953764095128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4723d69f3588f%3A0x400fae021a413e0!2sTorrellas%20de%20Foix%2C%2008737%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1678792872174!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div class="column">
+            <form action="./thankyou.html">
+              <p><strong>Contact Name:</strong> Gabriela Ugarte Maco</p>
+              <p><strong>Address:</strong> 123 Main St, Torrelles de Foix, Spain</p>
+              <p><strong>Email:</strong> gabrielaugartemaco@example.com</p>
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <textarea placeholder="Message"></textarea>
+              <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
     <footer>
         <div class="address">
             <a id="logo_link" href="index.html">
@@ -81,7 +97,10 @@
           <p><a href="./contact.html">Contact Us</a></p>
         </div>
     </footer>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/directory.js"></script>
+
+ 
+  <script src="./scripts/script.js"></script>
+
 </body>
 </html>
+        

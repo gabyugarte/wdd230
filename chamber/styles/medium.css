@@ -1,5 +1,17 @@
 @media only screen and (min-width: 35rem){
   
+  header {
+    background-color: var(--nav-background-color);
+    color: var(--headline-color-on-color);
+    display: grid;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    font-size: .9rem;
+    padding-bottom: 8px;
+}
     nav button {
         display: none;
     }
@@ -183,7 +195,8 @@
       justify-content: space-around;
       align-items: center;
       font-size: .9rem;
-      margin-top: 30px;
+      /* margin-top: 30px; */
+      
   }
   footer a{
       text-decoration: none;
@@ -218,4 +231,102 @@
   .main-join {
     display: block;
 }
+/* ------------------------Aside Directory------------------------ */
+.business-list-index {
+  display: grid;
+  height: 90%;
+  margin-top: 50px;
+}
+
+.business-card {
+  width: 60%;
+  margin-bottom: 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #0E54B1;
+  color: white;
+  margin: 10px auto;
+}
+
+.business-card img {
+  display: block;
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  margin:0 auto;
+}
+
+.business-card h2 {
+  margin: 10px;
+}
+
+.business-card p {
+  margin: 5px 10px;
+  font-size: 25px;
+  color:#999;
+}
+/* Contact Page */
+* {
+  box-sizing: border-box;
+}
+.container-contact{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* .contact-info p {
+  margin-bottom: 10px;
+} */
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  background-color: #e8e8e8;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color:#0E54B1;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color:var(--nav-hover-background-color);
+  color: #333;
+}
+
+.column {
+  width: 100%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.column iframe {
+width: 100%;
+margin-top: 15%;
+}
+
 }

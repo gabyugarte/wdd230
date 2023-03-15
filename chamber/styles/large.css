@@ -14,9 +14,9 @@
   main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 30px;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    grid-gap: 5px;
+    /* margin-bottom: 20px; */
+    /* margin-top: 10px; */
   }
     nav button {
         display: none;
@@ -60,7 +60,8 @@
     } */
      .hero-text {
       font-size: .9rem;
-      margin-top: 50%;
+      margin-top: 0px;
+      height: 50%;
       }
       .event{
         padding-top: 40px;
@@ -89,7 +90,7 @@
       .weather {
         grid-column: 2/4;
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
       }
     
       .hero {
@@ -101,7 +102,7 @@
       .joinbutton,
       .news,
       .weather {
-        grid-row: 3/4;
+        grid-row: 2/4;
       }
     
       .event,
@@ -130,4 +131,54 @@
       background-color: #fff;
       box-shadow: 0 0 10px rgb(0 0 0 / 10%);
     }
+    /* ------------------------Aside Directory------------------------ */
+.business-list-index {
+  display: grid;
+}
+
+.business-card {
+  width: 80%;
+  height: 450px;
+  margin-bottom: 20px;
+  border: 1px solid #0E54B1;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #0E54B1;
+  color: white;
+}
+
+.business-card img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-left: 5px;
+}
+
+.business-card h2 {
+  margin: 10px;
+}
+
+.business-card p {
+  margin: 5px 10px;
+  font-size: 14px;
+  color:#999;
+}
+.news-text {
+  margin-top: 10%;
+}
+.news-text img {
+  width: 80%;
+  margin-top: 50px;
+}
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+footer{
+  margin-top: 0;
+}
   }
