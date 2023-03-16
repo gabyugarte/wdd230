@@ -2,9 +2,9 @@
 const businessList = document.querySelector('.business-list-index');
 
 // Cargar los datos desde el archivo JSON
-fetch('data.json')
+fetch('data2.json')
   .then(response => response.json())
-  .then(data => {
+  .then(data2 => {
     // Mostrar los primeros tres negocios en el elemento HTML
     for (let i = 0; i < 3; i++) {
       // Crear un elemento <div> con la clase "business-card" para mostrar la información del negocio
@@ -12,12 +12,12 @@ fetch('data.json')
       businessDiv.classList.add('business-card');
       
       // Obtener los datos del negocio
-      const businessName = data[i].name;
-      const businessAddress = data[i].address;
-      const businessPhone = data[i].phone;
-      const businessWebsite = data[i].website;
-      const businessImage = data[i].image;
-      const businessMembership = data[i].membership;
+      const businessName = data2[i].name;
+      const businessAddress = data2[i].address;
+      const businessPhone = data2[i].phone;
+      const businessWebsite = data2[i].website;
+      const businessImage = data2[i].image;
+      const businessMembership = data2[i].membership;
       
       // Crear el HTML para mostrar la información del negocio
       businessDiv.innerHTML = `
