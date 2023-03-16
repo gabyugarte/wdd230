@@ -2,7 +2,7 @@
 const businessList = document.querySelector('.business-list-index');
 
 // Cargar los datos desde el archivo JSON
-fetch('data2.json')
+fetch('data.json')
   .then(response => response.json())
   .then(data2 => {
     // Mostrar los primeros tres negocios en el elemento HTML
