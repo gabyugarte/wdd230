@@ -1,0 +1,73 @@
+
+@media only screen and (min-width: 64rem){
+    
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    }
+    #primaryNav li a {
+        font-size: 1.5rem;
+    }
+    .contact-info p {
+        font-size: 1.3rem;
+    }
+    .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/freshFruits.jpg);
+        height: 80vh;
+        grid-column: 1/4;
+        grid-row: 2/3;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .hero-text {
+     
+        font-size: 1.5rem;
+    }
+
+.logo img {
+    height: 200px;
+    margin-left: 25px;
+}
+
+.contact-info {
+        margin: 10px 10px;
+        display: block;
+}
+.countDown h3{
+  font-size: 1.5rem;
+}
+section#social {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+.weather-card {
+    grid-row: 3/4;
+    grid-column: 2/4;
+}
+.container-gallery {
+    grid-row: 4/5;
+    grid-column: 1/3;
+    width: 80%;
+    margin: 0 auto;
+    margin: 5px auto;
+}
+.info-card {
+    grid-row: 4/5;
+    grid-column: 3/4;
+    width: 80%;
+    margin: 5px auto;
+}
+.info-card h2 {
+    margin-top: 40%;
+}
+section#social h2 {
+    margin-top: 18%;
+}
+}

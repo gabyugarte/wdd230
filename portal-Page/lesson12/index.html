@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="./images/FruitLogo.png" alt="Bountiful Foods"></a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false">🍔</button>
+      <span class="sr-only">Menu</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <nav>
+      <ul id="primaryNav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./freshPage.html">Fresh</a></li>
+        <li><a href="./aboutUs.html">About Us</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="contact-info">
+      <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+      <p><i class="fas fa-envelope"></i> info@bountifulfoods.com</p>
+    </div>
+  </header>
+  
+  <main class="index-container">
+    <div class="countDown">
+      <h3>Count down to inagurate our new Bountiful Fruit Truck: </h3><p id="demo"></p>
+    </div>
+       <!-- Hero Section -->
+    <div class="hero-image hero">
+      <!-- <img src="./images/freshFruits.jpg" alt=""> -->
+      <div class="hero-text">
+        <h1>Welcome to Bountiful Foods</h1>
+        <p>Located in the heart of Santa Mónica, our trucks offer a variety of freshly fruits, specialty drinks, and delicious pastries. Come in and enjoy our cozy atmosphere with a view of the beautiful coastline.</p>
+        <a href="./freshPage.html" class="cta-btn">Visit Our Fresh Page</a>
+      </div>
+    </div>
+    <!-- Social Section -->
+  <section id="social">
+    <h2>Follow Us</h2>
+    <ul>
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </section>
+  <!-- Container for the image gallery -->
+<div class="container-gallery">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="./images/SantaMonicaBeach.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="./images/beach.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="./images/carrousel.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="./images/fruits.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="./images/losAngeles.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="./images/nature.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p>One of the most popular and scenic coastal areas in Southern California is Santa Monica. Located in Los Angeles, Santa Monica is home to a world-famous pier, beautiful beaches, and a vibrant downtown area.</p>
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="./images/SantaMonicaBeach.jpg" style="width:100%" onclick="currentSlide(1)" alt="Fun at the beach">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/beach.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Beautiful Beaches">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/carrousel.jpg" style="width:100%" onclick="currentSlide(3)" alt="Carrousel">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/fruits.jpg" style="width:100%" onclick="currentSlide(4)" alt="Delitious Fresh Fruits">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/losAngeles.jpg" style="width:100%" onclick="currentSlide(5)" alt="Los Angeles CA">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/nature.jpg" style="width:100%" onclick="currentSlide(6)" alt="Nature">
+    </div>
+  </div>
+</div>
+   <!-- Weather Section -->
+  <div class="weather-card">
+    <h2>Current Weather in Santa Mónica is: </h2>
+    <div class="weather-info">
+      <figure>
+        <img src="" alt="" id="weather-icon" />
+        <p class="description"></p>
+      </figure>
+    <div class="weather-details">
+      <p class="temperature"><span id="current-temp"></span>&deg;C</p>
+      <h4>Humidity: <span id="humidity"></span></h4>
+    </div>
+  </div>
+  </div>
+   <!-- info Card Section -->
+  <div class="info-card">
+    <h2>Total Specialty Drinks Submitted 🍹</h2>
+    <img src="images/fruitDrinks.jpg" alt="fruit drinks">
+    <p id="count"></p>
+  </div>
+</main>
+  <footer>
+    <div class="container">
+      <div class="footer-info">
+        <h3>Contact</h3>
+        <p><i class="fas fa-map-marker-alt"></i>123 Calle Falsa, Springfield</p>
+        <p><i class="fas fa-phone"></i>(123) 456-7890</p>
+        <p><i class="fas fa-envelope"></i>info@bountifulfoods.com</p>
+      </div>
+      <div class="footer-links">
+        <h3>Helpful links</h3>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./aboutUs.html">About Us</a></li>
+          <li><a href="./freshPage.html">Fresh</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Follow us</h3>
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/countdown.js"></script>
+  <script src="scripts/containerGallery.js"></script>
+  <script src="scripts/freshPage.js"></script>
+  <script src="scripts/showNumberOfDrinks.js"></script>
+</body>
+</html>

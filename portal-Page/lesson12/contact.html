@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="./images/FruitLogo.png" alt="Bountiful Foods"></a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false">🍔</button>
+      <span class="sr-only">Menu</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <nav>
+      <ul id="primaryNav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./freshPage.html">Fresh</a></li>
+        <li><a href="./aboutUs.html">About Us</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="contact-info">
+      <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+      <p><i class="fas fa-envelope"></i> info@bountifulfoods.com</p>
+    </div>
+  </header>
+  
+
+<section class="contactForm">
+    <div class="container-contact">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Thanks for your message! We will contact you soon.</p>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+      <div class="footer-info">
+        <h3>Contact</h3>
+        <p><i class="fas fa-map-marker-alt"></i>123 Calle Falsa, Springfield</p>
+        <p><i class="fas fa-phone"></i>(123) 456-7890</p>
+        <p><i class="fas fa-envelope"></i>info@bountifulfoods.com</p>
+      </div>
+      <div class="footer-links">
+        <h3>Helpful links</h3>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./aboutUs.html">About Us</a></li>
+          <li><a href="./freshPage.html">Fresh</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Follow us</h3>
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
