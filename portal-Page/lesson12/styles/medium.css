@@ -147,7 +147,8 @@ section#social {
 }
 .mySlides img{
   width: 100%;
-  height: 800px;
+  height: 700px;
+  object-fit: cover;
 }
 .row:after {
   content: "";
@@ -197,5 +198,19 @@ section#social {
         footer {
           margin-top: 5px;
       }
-      
+      /* MEET THE TEAM section */
+      .columnTeam {
+        float: left;
+        width: 45%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+      .columnTeam .card img{
+        width: 250px;
+        height: 350px;
+      }
+      .row{
+        display: flex;
+        flex-wrap: wrap;
+      }
   }
