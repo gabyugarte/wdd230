@@ -213,4 +213,8 @@ section#social {
         display: flex;
         flex-wrap: wrap;
       }
+      .row_team{
+        display: flex;
+        flex-wrap: wrap;
+      }
   }

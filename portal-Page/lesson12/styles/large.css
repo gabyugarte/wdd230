@@ -88,4 +88,9 @@ section#social h2 {
     margin-bottom: 16px;
     padding: 0 8px;
 }
+.row_team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
 }
